@@ -14,7 +14,7 @@ function judgeUserType(user: UserA | UserB | UserC) {
       const u2 = user;
       return "user type is UserC";
     default:
-      const u3 = user;
+      const u3 = user; // defaultブロックに到達することはないので、never型
       return "user type is never";
   }
 }
